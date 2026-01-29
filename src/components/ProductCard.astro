@@ -1,0 +1,43 @@
+---
+const { title, subtitle, badge = "NOVEDAD", status = "En stock" } = Astro.props;
+const isSoldOut = status.toLowerCase().includes("agotado");
+---
+
+<article class="group overflow-hidden rounded-card border border-border bg-surface">
+    <div class="relative">
+        <div class="absolute left-3 top-3 z-10 inline-flex items-center gap-2 rounded-btn bg-base/70 px-3 py-1 text-xs text-muted backdrop-blur">
+        <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+        {badge}
+        </div>
+
+        <div class="aspect-ratio: 4/3 bg-linear-to-b from-base/40 to-base/10">
+            <div class="absolute inset-0 flex items-center justify-center text-xs text-muted">
+                Imagen de producto
+            </div>
+        </div>
+
+        <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+        <span class={`rounded-btn px-3 py-1 text-xs font-semibold ${isSoldOut ? "bg-base/70 text-muted border border-border" : "bg-accent text-white"}`}>
+            {status}
+        </span>
+        <span class="text-xs text-muted">JP</span>
+        </div>
+    </div>
+
+    <div class="p-4">
+        <h3 class="text-sm font-semibold">{title}</h3>
+        <p class="mt-1 text-xs text-muted">{subtitle}</p>
+
+        <div class="mt-4 flex items-center justify-between">
+        <a href="#" class="text-sm font-semibold text-text group-hover:text-white">
+            Ver producto
+        </a>
+        <a
+            href="#"
+            class={`rounded-btn px-3 py-2 text-xs font-semibold ${isSoldOut ? "border border-border bg-base/40 text-muted" : "bg-accent text-white hover:bg-accent-2"}`}
+        >
+            Añadir
+        </a>
+        </div>
+    </div>
+</article>
