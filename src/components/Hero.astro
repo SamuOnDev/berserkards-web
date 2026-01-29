@@ -1,58 +1,40 @@
 ---
-import hero from "../assets/hero.png";
+const { messages } = Astro.props;
 ---
 
-<section class="<Container> pt-10">
-    <div class="relative overflow-hidden rounded-card border border-border bg-surface">
-        <img
-        src={hero.src}
-        alt="Berserkards: cajas japonesas a tu alcance"
-        class="h-105 w-full object-cover opacity-90"
-        loading="eager"
-        />
+<section id="inicio" class="mx-auto max-w-6xl px-4 pt-10">
+  <!-- TODO: Coloca la imagen del hero en /public/images/hero.jpg y úsala como background en este contenedor. -->
+  <div class="relative overflow-hidden rounded-card border border-border bg-surface" role="img" aria-label={messages.hero.imageLabel}>
+    <div
+      class="absolute inset-0 bg-[radial-gradient(900px_420px_at_50%_0%,rgba(224,69,90,0.2),transparent_70%)]"
+      aria-hidden="true"
+    ></div>
+    <div
+      class="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,13,16,0.75)_0%,rgba(11,13,16,0.2)_55%,rgba(11,13,16,0.9)_100%)]"
+      aria-hidden="true"
+    ></div>
+    <div class="relative px-6 py-16 text-center sm:px-12 sm:py-20">
+      <div class="mx-auto inline-flex max-w-md items-center justify-center rounded-full border border-border/60 bg-base/60 px-4 py-2 text-xs uppercase tracking-[0.2em] text-muted">
+        {messages.hero.badge}
+      </div>
 
-        <!-- Fade superior hacia el header -->
-        <div class="absolute inset-0 bg-linear-to-b from-base/95 via-base/40 to-transparent"></div>
+      <h1 class="mx-auto mt-6 max-w-2xl text-3xl font-semibold leading-tight text-text sm:text-4xl lg:text-5xl">
+        {messages.hero.title}
+      </h1>
 
-        <!-- Overlay radial para oscurecer detrás del texto -->
-        <div class="absolute inset-0 pointer-events-none [background:radial-gradient(600px_420px_at_22%_60%,rgba(0,0,0,0.65),transparent_70%)]"></div>
+      <p class="mx-auto mt-4 max-w-xl text-sm text-muted sm:text-base">
+        {messages.hero.subtitle}
+      </p>
 
-        <div class="absolute inset-0 flex items-end">
-        <div class="p-8">
-            <div class="inline-flex items-center gap-2 rounded-btn border border-border bg-base/60 px-3 py-1 text-xs text-muted backdrop-blur">
-            One Piece • JP • Stock real
-            </div>
+      <div class="mt-8 flex justify-center">
+        <a
+          href="#one-piece"
+          class="inline-flex items-center justify-center rounded-btn bg-accent px-8 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-[0_12px_30px_rgba(224,69,90,0.35)] transition hover:bg-accent-2"
+        >
+          {messages.hero.ctaPrimary}
+        </a>
+      </div>
 
-            <h1 class="mt-4 max-w-xl text-5xl leading-[1.05] font-semibold tracking-tight md:text-7xl drop-shadow-[0_6px_30px_rgba(0,0,0,0.85)]">
-            Berserkards: cajas japonesas a tu alcance
-            </h1>
-
-            <p class="mt-3 max-w-xl text-sm text-muted md:text-base">
-            Producto 100% original. Envío 24–72h. Preparado para coleccionistas.
-            </p>
-
-            <div class="mt-6 flex gap-3">
-            <a
-                href="#novedades"
-                class="inline-flex items-center justify-center rounded-btn bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-accent-2 shadow-[0_10px_40px_rgba(224,69,90,0.45)] ring-1 ring-accent/40 hover:scale-[1.05] transition-all"
-            >
-                VER CAJAS
-            </a>
-
-            <a
-                href="#"
-                class="inline-flex items-center justify-center rounded-btn border border-border bg-surface/70 px-6 py-3 text-sm font-semibold text-text hover:bg-base/60"
-            >
-                Ver sets
-            </a>
-            </div>
-
-            <div class="mt-6 flex flex-wrap gap-2 text-xs text-muted">
-            <span class="rounded-btn border border-border bg-surface/60 border-border/60 px-3 py-1">Producto 100% original</span>
-            <span class="rounded-btn border border-border bg-surface/60 border-border/60 px-3 py-1">Envío 24–72h</span>
-            <span class="rounded-btn border border-border bg-surface/60 border-border/60 px-3 py-1">Stock real</span>
-            </div>
-        </div>
-        </div>
     </div>
+  </div>
 </section>

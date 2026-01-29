@@ -1,0 +1,27 @@
+---
+const { messages } = Astro.props;
+const items = messages.benefits.items;
+const icons = [
+  "M5 12l4 4 10-10",
+  "M3 12h9m-4-4 4 4-4 4M14 4h4v4",
+  "M4 12l3 3 7-7"
+];
+---
+
+<section class="mx-auto mt-14 max-w-6xl px-4">
+  <div class="grid gap-8 border-t border-border/60 py-10 text-center sm:grid-cols-3 sm:text-left">
+    {items.map((item, index) => (
+      <div class="flex flex-col items-center gap-4 sm:items-start">
+        <span class="flex h-12 w-12 items-center justify-center rounded-full border border-accent/40 bg-accent/10 text-accent">
+          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d={icons[index] ?? icons[0]} stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.2em]">{item.title}</p>
+          <p class="mt-2 text-xs text-muted">{item.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Berserkards | One Piece JP"
+  },
+  "nav": {
+    "links": [
+      { "key": "home", "label": "Home", "href": "#inicio" },
+      { "key": "one-piece", "label": "One Piece JP", "href": "#one-piece" },
+      { "key": "news", "label": "New", "href": "#novedades" },
+      { "key": "best", "label": "Best Sellers", "href": "#mas-vendidos" },
+      { "key": "accessories", "label": "Accessories", "href": "#accesorios" }
+    ],
+    "activeKey": "one-piece",
+    "searchLabel": "Search",
+    "accountLabel": "Account",
+    "cartLabel": "Cart",
+    "languageLabel": "ES"
+  },
+  "hero": {
+    "badge": "Your Japanese box, protected and drama-free.",
+    "title": "Your Japanese box, protected and drama-free.",
+    "subtitle": "Opening a box hits different when it arrives perfect.",
+    "ctaPrimary": "View boxes",
+    "imageLabel": "Hero image for Japanese booster boxes"
+  },
+  "section": {
+    "onePieceTitle": "One Piece JP - Booster Box",
+    "onePieceSubtitle": "Real stock, sealed original and fast shipping.",
+    "ctaAll": "View all"
+  },
+  "products": {
+    "imagePlaceholder": "Add product image here",
+    "items": [
+      {
+        "title": "Booster Box OP-05",
+        "status": "IN STOCK",
+        "badge": "NEW",
+        "tag": "JP"
+      },
+      {
+        "title": "Booster Box OP-06",
+        "status": "NEW",
+        "badge": "NEW",
+        "tag": "JP"
+      },
+      {
+        "title": "Booster Box OP-04",
+        "status": "SOLD OUT",
+        "badge": "SOLD OUT",
+        "tag": "JP"
+      },
+      {
+        "title": "Booster Box OP-03 (JP)",
+        "status": "IN STOCK",
+        "badge": "TOP",
+        "tag": "JP"
+      }
+    ],
+    "actions": {
+      "view": "View product",
+      "add": "Add"
+    }
+  },
+  "benefits": {
+    "items": [
+      {
+        "title": "100% original product",
+        "description": "Sealed and protected for collectors."
+      },
+      {
+        "title": "Shipping 24–72h",
+        "description": "Fast prep and real tracking."
+      },
+      {
+        "title": "Guaranteed real stock",
+        "description": "What you see is what you receive."
+      }
+    ]
+  },
+  "footer": {
+    "customerService": {
+      "title": "Customer Service",
+      "cta": "Ask me",
+      "email": "envio@berserkards.com"
+    },
+    "info": {
+      "title": "Information",
+      "links": [
+        "Shipping & returns",
+        "FAQs",
+        "Terms & conditions"
+      ]
+    },
+    "socialTitle": "Follow us",
+    "copyright": "© 2024 Berserkards. All rights reserved."
+  }
+}

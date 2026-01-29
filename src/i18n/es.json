@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Berserkards | One Piece JP"
+  },
+  "nav": {
+    "links": [
+      { "key": "home", "label": "Inicio", "href": "#inicio" },
+      { "key": "one-piece", "label": "One Piece JP", "href": "#one-piece" },
+      { "key": "news", "label": "Novedades", "href": "#novedades" },
+      { "key": "best", "label": "Más Vendidos", "href": "#mas-vendidos" },
+      { "key": "accessories", "label": "Accesorios", "href": "#accesorios" }
+    ],
+    "activeKey": "one-piece",
+    "searchLabel": "Buscar",
+    "accountLabel": "Cuenta",
+    "cartLabel": "Carrito",
+    "languageLabel": "EN"
+  },
+  "hero": {
+    "badge": "Tu caja japonesa, bien protegida y sin dramas.",
+    "title": "Tu caja japonesa, bien protegida y sin dramas.",
+    "subtitle": "Abrir una box mola más cuando sabes que viene perfecta.",
+    "ctaPrimary": "Ver cajas",
+    "imageLabel": "Imagen destacada de cajas japonesas"
+  },
+  "section": {
+    "onePieceTitle": "One Piece JP - Booster Box",
+    "onePieceSubtitle": "Stock real, sellado original y envío rápido.",
+    "ctaAll": "Ver todo"
+  },
+  "products": {
+    "imagePlaceholder": "Añade aquí la imagen del producto",
+    "items": [
+      {
+        "title": "Booster Box OP-05",
+        "status": "EN STOCK",
+        "badge": "NOVEDAD",
+        "tag": "JP"
+      },
+      {
+        "title": "Booster Box OP-06",
+        "status": "NOVEDAD",
+        "badge": "NOVEDAD",
+        "tag": "JP"
+      },
+      {
+        "title": "Booster Box OP-04",
+        "status": "AGOTADO",
+        "badge": "AGOTADO",
+        "tag": "JP"
+      },
+      {
+        "title": "Booster Box OP-03 (JP)",
+        "status": "EN STOCK",
+        "badge": "TOP",
+        "tag": "JP"
+      }
+    ],
+    "actions": {
+      "view": "Ver producto",
+      "add": "Añadir"
+    }
+  },
+  "benefits": {
+    "items": [
+      {
+        "title": "Producto 100% original",
+        "description": "Sellado y protegido para coleccionistas."
+      },
+      {
+        "title": "Envío 24–72h",
+        "description": "Preparación rápida y seguimiento real."
+      },
+      {
+        "title": "Stock real garantizado",
+        "description": "Lo que ves es lo que recibes."
+      }
+    ]
+  },
+  "footer": {
+    "customerService": {
+      "title": "Atención al Cliente",
+      "cta": "Pregúntame",
+      "email": "envio@berserkards.com"
+    },
+    "info": {
+      "title": "Información",
+      "links": [
+        "Envíos y devoluciones",
+        "FAQs",
+        "Términos y condiciones"
+      ]
+    },
+    "socialTitle": "Síguenos",
+    "copyright": "© 2024 Berserkards. Todos los derechos reservados."
+  }
+}
