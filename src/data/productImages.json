@@ -1,0 +1,9 @@
+{
+  "basePath": "/images/products",
+  "items": {
+    "op05": "op-05.svg",
+    "op06": "op-06.svg",
+    "op04": "op-04.svg",
+    "op03": "op-03.svg"
+  }
+}
