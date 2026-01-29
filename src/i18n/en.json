@@ -33,24 +33,28 @@
     "items": [
       {
         "title": "Booster Box OP-05",
+        "imageKey": "op05",
         "status": "IN STOCK",
         "badge": "NEW",
         "tag": "JP"
       },
       {
         "title": "Booster Box OP-06",
+        "imageKey": "op06",
         "status": "NEW",
         "badge": "NEW",
         "tag": "JP"
       },
       {
         "title": "Booster Box OP-04",
+        "imageKey": "op04",
         "status": "SOLD OUT",
         "badge": "SOLD OUT",
         "tag": "JP"
       },
       {
         "title": "Booster Box OP-03 (JP)",
+        "imageKey": "op03",
         "status": "IN STOCK",
         "badge": "TOP",
         "tag": "JP"
