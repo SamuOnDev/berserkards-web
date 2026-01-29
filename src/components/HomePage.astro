@@ -1,0 +1,58 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import TopTrustBar from "./TopTrustBar.astro";
+import Header from "./Header.astro";
+import Hero from "./Hero.astro";
+import ProductCard from "./ProductCard.astro";
+import Footer from "./Footer.astro";
+import ValueProps from "./ValueProps.astro";
+import { defaultLocale, translations, type Locale } from "../i18n";
+
+const { lang, pathname } = Astro.props as { lang: Locale; pathname: string };
+const messages = translations[lang];
+const basePath = pathname === "/" ? "" : `/${lang}`;
+const switchLang = lang === "es" ? "en" : "es";
+const switchPath = switchLang === defaultLocale && pathname === "/" ? "/" : `/${switchLang}`;
+const navLabels = Object.fromEntries(messages.nav.links.map((link) => [link.key, link.label]));
+---
+
+<SiteLayout title={messages.meta.title} lang={lang}>
+  <TopTrustBar />
+  <Header
+    messages={messages}
+    basePath={basePath}
+    switchLang={switchLang}
+    switchPath={switchPath}
+  />
+  <main>
+    <Hero messages={messages} />
+
+    <span id="novedades" class="sr-only">{navLabels.news}</span>
+    <span id="mas-vendidos" class="sr-only">{navLabels.best}</span>
+    <span id="accesorios" class="sr-only">{navLabels.accessories}</span>
+
+    <div class="mx-auto mt-12 h-px max-w-6xl bg-border/60"></div>
+
+    <section id="one-piece" class="mx-auto mt-12 max-w-6xl px-4">
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.3em] text-muted">{messages.section.onePieceSubtitle}</p>
+          <h2 class="mt-3 text-2xl font-semibold sm:text-3xl">{messages.section.onePieceTitle}</h2>
+        </div>
+        <a href="#" class="text-sm font-semibold text-muted hover:text-text">
+          {messages.section.ctaAll}
+        </a>
+      </div>
+
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {messages.products.items.map((product) => (
+          <ProductCard product={product} actions={messages.products.actions} placeholder={messages.products.imagePlaceholder} />
+        ))}
+      </div>
+    </section>
+
+    <ValueProps messages={messages} />
+
+    <Footer messages={messages} />
+  </main>
+</SiteLayout>

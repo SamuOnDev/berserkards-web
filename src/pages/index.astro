@@ -1,35 +1,6 @@
 ---
-import SiteLayout from "../layouts/SiteLayout.astro";
-import TopTrustBar from "../components/TopTrustBar.astro";
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import ProductCard from "../components/ProductCard.astro";
-import Footer from "../components/Footer.astro";
+import HomePage from "../components/HomePage.astro";
+import { defaultLocale } from "../i18n";
 ---
 
-<SiteLayout title="Berserkards">
-	<TopTrustBar />
-	<Header />
-	<main>
-		<Hero />
-
-		<div class="mx-auto mt-14 h-px max-width: 1180px bg-border/60"></div>
-		<section id="novedades" class="mx-auto mt-12 max-w-6xl px-4">
-		<div class="flex items-end justify-between">
-			<div>
-			<h2 class="text-xl font-semibold">Novedades</h2>
-			<p class="mt-1 text-sm text-muted">One Piece JP en stock real.</p>
-			</div>
-			<a href="#" class="text-sm font-semibold text-muted hover:text-text">Ver todo</a>
-		</div>
-
-		<div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-			<ProductCard title="Booster Box OP-10 (JP)" subtitle="Sellado original • 24–72h" badge="NOVEDAD" status="En stock" />
-			<ProductCard title="Booster Box OP-09 (JP)" subtitle="Sellado original • 24–72h" badge="TOP" status="En stock" />
-			<ProductCard title="Booster Box OP-08 (JP)" subtitle="Sellado original • 24–72h" badge="LIMITADO" status="Agotado" />
-		</div>
-		</section>
-
-		<Footer />
-	</main>
-</SiteLayout>
+<HomePage lang={defaultLocale} pathname={Astro.url.pathname} />
