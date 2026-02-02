@@ -110,7 +110,8 @@
       ]
     },
     "socialTitle": "Síguenos",
-    "copyright": "© 2024 Berserkards. Todos los derechos reservados."
+    "copyright": "© {year} Berserkards. Todos los derechos reservados.",
+    "designCredit": "Diseño por Berserkards Studio."
   },
   "pages": {
     "shippingReturns": {
