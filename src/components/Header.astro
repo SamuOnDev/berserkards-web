@@ -25,10 +25,21 @@ const navLinks = messages.nav.links;
           decoding="async"
         />
         <div class="leading-tight">
-          <div class="text-sm font-semibold tracking-[0.35em]">BERSERKARDS</div>
-          <div class="text-xs text-muted">One Piece JP</div>
+          <div class="text-base font-semibold tracking-[0.35em] sm:text-lg">BERSERKARDS</div>
+          <div class="text-sm text-muted sm:text-base">One Piece JP</div>
         </div>
       </a>
+
+      <nav class="flex flex-wrap items-center gap-6 overflow-x-auto text-xs uppercase tracking-[0.2em] text-muted sm:text-sm">
+        {navLinks.map((link) => (
+          <a
+            href={`${basePath}${link.href}`}
+            class={`whitespace-nowrap pb-2 transition ${link.key === messages.nav.activeKey ? "border-b-2 border-accent text-text" : "border-b-2 border-transparent hover:text-text"}`}
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
 
       <div class="flex items-center gap-4">
         <button
@@ -71,16 +82,5 @@ const navLinks = messages.nav.links;
         </a>
       </div>
     </div>
-
-    <nav class="flex items-center gap-6 overflow-x-auto border-t border-border/60 py-3 text-xs uppercase tracking-[0.2em] text-muted sm:text-sm">
-      {navLinks.map((link) => (
-        <a
-          href={`${basePath}${link.href}`}
-          class={`whitespace-nowrap pb-2 transition ${link.key === messages.nav.activeKey ? "border-b-2 border-accent text-text" : "border-b-2 border-transparent hover:text-text"}`}
-        >
-          {link.label}
-        </a>
-      ))}
-    </nav>
   </div>
 </header>
