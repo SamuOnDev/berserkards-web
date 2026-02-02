@@ -1,4 +1,6 @@
 ---
+import logo from "../assets/logo.png";
+
 const { messages, basePath, switchLang, switchPath } = Astro.props;
 const navLinks = messages.nav.links;
 ---
@@ -7,11 +9,13 @@ const navLinks = messages.nav.links;
   <div class="mx-auto max-w-6xl px-4">
     <div class="flex items-center justify-between py-4">
       <a href={basePath || "/"} class="flex items-center gap-3">
-        <span class="flex h-9 w-9 items-center justify-center rounded-full border border-accent/40 bg-accent/10">
-          <svg viewBox="0 0 24 24" class="h-5 w-5 text-accent" fill="currentColor" aria-hidden="true">
-            <path d="M12 2c1.7 2.2 2.8 4.4 3.1 6.7 2.2-.8 4.4-.9 6.9-.2-1.6 1.8-3.4 3-5.5 3.6 1.7 1.2 3.1 2.8 4 4.7-2.2-.2-4.1-.8-5.8-1.9-.1 2.2-.8 4.2-2.1 5.9-1.3-1.7-2-3.7-2.1-5.9-1.7 1.1-3.6 1.7-5.8 1.9.9-1.9 2.3-3.5 4-4.7-2.1-.6-3.9-1.8-5.5-3.6 2.5-.7 4.7-.6 6.9.2.3-2.3 1.4-4.5 3.1-6.7z" />
-          </svg>
-        </span>
+        <img
+          src={logo}
+          alt="Berserkards logo"
+          class="h-9 w-9 rounded-full border border-accent/40 bg-accent/10 object-contain p-1"
+          loading="eager"
+          decoding="async"
+        />
         <div class="leading-tight">
           <div class="text-sm font-semibold tracking-[0.35em]">BERSERKARDS</div>
           <div class="text-xs text-muted">One Piece JP</div>
