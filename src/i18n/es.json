@@ -4,8 +4,16 @@
   },
   "nav": {
     "links": [
-      { "key": "one-piece", "label": "One Piece JP", "href": "#one-piece" },
-      { "key": "accessories", "label": "Accesorios", "href": "#accesorios" }
+      {
+        "key": "one-piece",
+        "label": "One Piece JP",
+        "href": "#one-piece"
+      },
+      {
+        "key": "accessories",
+        "label": "Accesorios",
+        "href": "#accesorios"
+      }
     ],
     "activeKey": "one-piece",
     "searchLabel": "Buscar",
@@ -87,12 +95,154 @@
     "info": {
       "title": "Información",
       "links": [
-        "Envíos y devoluciones",
-        "FAQs",
-        "Términos y condiciones"
+        {
+          "label": "Envíos y devoluciones",
+          "href": "/shipping-returns"
+        },
+        {
+          "label": "FAQs",
+          "href": "/faqs"
+        },
+        {
+          "label": "Términos y condiciones",
+          "href": "/terms-conditions"
+        }
       ]
     },
     "socialTitle": "Síguenos",
     "copyright": "© 2024 Berserkards. Todos los derechos reservados."
+  },
+  "pages": {
+    "shippingReturns": {
+      "kicker": "Guía provisional",
+      "title": "Envíos y devoluciones",
+      "subtitle": "Mockup de información para mostrar cómo quedará la sección. Los textos definitivos se ajustarán más adelante.",
+      "notice": "Contenido de ejemplo: tiempos, costes y procesos se revisarán antes del lanzamiento.",
+      "sections": [
+        {
+          "title": "Plazos de entrega",
+          "body": "Preparamos pedidos en 24–48 h laborables y el envío estándar tarda 24–72 h en península.",
+          "items": [
+            "Confirmación automática con resumen del pedido.",
+            "Seguimiento activo una vez sale del almacén.",
+            "Opciones premium bajo solicitud."
+          ]
+        },
+        {
+          "title": "Costes de envío",
+          "body": "Coste calculado en checkout según destino y peso.",
+          "items": [
+            "Península: tarifa base con tramos.",
+            "Islas y EU: tarifa especial con aduanas incluidas.",
+            "Recogida local disponible en fases futuras."
+          ]
+        },
+        {
+          "title": "Devoluciones y cambios",
+          "body": "Aceptamos solicitudes hasta 14 días naturales tras la entrega.",
+          "items": [
+            "Producto sin abrir y en estado original.",
+            "Reintegro al método de pago en 3–5 días.",
+            "Cambios sujetos a stock disponible."
+          ]
+        },
+        {
+          "title": "Seguimiento y soporte",
+          "body": "Si algo se desvía, te avisamos y buscamos solución.",
+          "items": [
+            "Soporte por email con respuesta en 24 h.",
+            "Gestión de incidencias con la mensajería.",
+            "Prioridad para preventas y cajas premium."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "¿Necesitas ayuda con tu pedido?",
+        "body": "Escríbenos y preparamos una respuesta personalizada mientras afinamos los textos oficiales.",
+        "email": "envio@berserkards.com"
+      }
+    },
+    "faqs": {
+      "kicker": "Preguntas frecuentes",
+      "title": "FAQs",
+      "subtitle": "Resumen provisional de dudas comunes para mostrar el formato final.",
+      "notice": "Contenido de ejemplo. Actualizaremos estas respuestas con información oficial.",
+      "faqs": [
+        {
+          "question": "¿Los productos son originales y sellados?",
+          "answer": "Sí, trabajamos con distribuidores oficiales y el mockup contempla sellos intactos."
+        },
+        {
+          "question": "¿Cuándo recibiré mi caja?",
+          "answer": "El estimado actual combina 24–48 h de preparación y 24–72 h de transporte en península."
+        },
+        {
+          "question": "¿Puedo cambiar mi pedido?",
+          "answer": "Podemos ajustar pedidos en fase de preparación. Escríbenos cuanto antes para revisarlo."
+        },
+        {
+          "question": "¿Qué métodos de pago se aceptarán?",
+          "answer": "El mockup contempla tarjetas, PayPal y transferencias, pero lo confirmaremos antes del lanzamiento."
+        },
+        {
+          "question": "¿Cómo funciona el seguimiento?",
+          "answer": "Enviaremos un enlace de seguimiento cuando el paquete salga del almacén."
+        }
+      ],
+      "cta": {
+        "title": "¿Tienes otra duda?",
+        "body": "Cuéntanos tu pregunta y preparamos una respuesta rápida.",
+        "email": "envio@berserkards.com"
+      }
+    },
+    "terms": {
+      "kicker": "Información legal",
+      "title": "Términos y condiciones",
+      "subtitle": "Borrador de estructura legal. Ajustaremos los detalles cuando cerremos la política definitiva.",
+      "notice": "Texto placeholder para visualizar la sección legal mientras se completa la versión final.",
+      "sections": [
+        {
+          "title": "Proceso de compra",
+          "body": "Los pedidos se confirman tras el pago y enviamos un resumen automático con los datos registrados.",
+          "items": [
+            "Revisión manual de stock antes del envío.",
+            "Posibilidad de cancelación en fase de preparación.",
+            "Actualizaciones por email si cambia la disponibilidad."
+          ]
+        },
+        {
+          "title": "Precios y promociones",
+          "body": "Los precios incluyen impuestos aplicables y las promociones tienen vigencia limitada.",
+          "items": [
+            "Descuentos sujetos a unidades disponibles.",
+            "Bonos y códigos no acumulables.",
+            "Actualización de tarifas sin aviso previo."
+          ]
+        },
+        {
+          "title": "Responsabilidad",
+          "body": "Nos comprometemos a entregar productos auténticos y a comunicar incidencias logísticas.",
+          "items": [
+            "Cobertura por daños en transporte según carrier.",
+            "Reposición o reembolso en casos justificados.",
+            "Limitación de responsabilidad por retrasos externos."
+          ]
+        },
+        {
+          "title": "Privacidad",
+          "body": "Los datos se usan solo para gestionar pedidos y soporte, según normativa vigente.",
+          "items": [
+            "No compartimos datos con terceros salvo logística.",
+            "Derecho de acceso, rectificación y eliminación.",
+            "Canales oficiales para consultas de privacidad."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Contacto legal",
+        "body": "Para consultas legales o de privacidad, escríbenos y atenderemos tu solicitud.",
+        "email": "envio@berserkards.com"
+      }
+    }
   }
 }

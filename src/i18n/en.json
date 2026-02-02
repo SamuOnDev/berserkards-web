@@ -4,8 +4,16 @@
   },
   "nav": {
     "links": [
-      { "key": "one-piece", "label": "One Piece JP", "href": "#one-piece" },
-      { "key": "accessories", "label": "Accessories", "href": "#accesorios" }
+      {
+        "key": "one-piece",
+        "label": "One Piece JP",
+        "href": "#one-piece"
+      },
+      {
+        "key": "accessories",
+        "label": "Accessories",
+        "href": "#accesorios"
+      }
     ],
     "activeKey": "one-piece",
     "searchLabel": "Search",
@@ -87,12 +95,154 @@
     "info": {
       "title": "Information",
       "links": [
-        "Shipping & returns",
-        "FAQs",
-        "Terms & conditions"
+        {
+          "label": "Shipping & returns",
+          "href": "/shipping-returns"
+        },
+        {
+          "label": "FAQs",
+          "href": "/faqs"
+        },
+        {
+          "label": "Terms & conditions",
+          "href": "/terms-conditions"
+        }
       ]
     },
     "socialTitle": "Follow us",
     "copyright": "© 2024 Berserkards. All rights reserved."
+  },
+  "pages": {
+    "shippingReturns": {
+      "kicker": "Draft guide",
+      "title": "Shipping & returns",
+      "subtitle": "Mockup content to preview the section. Final copy will be refined later.",
+      "notice": "Placeholder copy: timelines, fees, and processes will be reviewed before launch.",
+      "sections": [
+        {
+          "title": "Delivery timelines",
+          "body": "Orders are prepared in 24–48 business hours and standard delivery takes 24–72 hours in mainland areas.",
+          "items": [
+            "Automatic confirmation with order recap.",
+            "Active tracking once the parcel leaves the warehouse.",
+            "Premium options available on request."
+          ]
+        },
+        {
+          "title": "Shipping fees",
+          "body": "Calculated at checkout based on destination and weight.",
+          "items": [
+            "Mainland: tiered base rate.",
+            "Islands and EU: special rate with customs included.",
+            "Local pickup available in future phases."
+          ]
+        },
+        {
+          "title": "Returns & exchanges",
+          "body": "Requests are accepted up to 14 calendar days after delivery.",
+          "items": [
+            "Product unopened and in original condition.",
+            "Refund to the original payment method in 3–5 days.",
+            "Exchanges subject to available stock."
+          ]
+        },
+        {
+          "title": "Tracking & support",
+          "body": "If anything shifts, we will notify you and work on a solution.",
+          "items": [
+            "Email support with 24-hour response target.",
+            "Incident handling with the carrier.",
+            "Priority for preorders and premium boxes."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Need help with your order?",
+        "body": "Send us a note and we will craft a tailored reply while final copy is polished.",
+        "email": "envio@berserkards.com"
+      }
+    },
+    "faqs": {
+      "kicker": "Frequently asked",
+      "title": "FAQs",
+      "subtitle": "Temporary answers to common questions to preview the final layout.",
+      "notice": "Sample content only. These answers will be updated with official details.",
+      "faqs": [
+        {
+          "question": "Are the products authentic and sealed?",
+          "answer": "Yes, we work with official distributors and the mockup assumes intact seals."
+        },
+        {
+          "question": "When will my box arrive?",
+          "answer": "Current estimate combines 24–48 hours of preparation and 24–72 hours of transit for mainland deliveries."
+        },
+        {
+          "question": "Can I change my order?",
+          "answer": "We can adjust orders during the preparation phase. Contact us as soon as possible."
+        },
+        {
+          "question": "Which payment methods will be available?",
+          "answer": "The mockup includes cards, PayPal, and bank transfer, but this will be confirmed before launch."
+        },
+        {
+          "question": "How does tracking work?",
+          "answer": "We will send a tracking link once the parcel leaves the warehouse."
+        }
+      ],
+      "cta": {
+        "title": "Have another question?",
+        "body": "Share your question and we will respond quickly.",
+        "email": "envio@berserkards.com"
+      }
+    },
+    "terms": {
+      "kicker": "Legal information",
+      "title": "Terms & conditions",
+      "subtitle": "Draft legal structure. Details will be adjusted once the final policy is approved.",
+      "notice": "Placeholder text to visualize the legal section while the final version is prepared.",
+      "sections": [
+        {
+          "title": "Purchase process",
+          "body": "Orders are confirmed after payment and an automatic summary is sent with the recorded details.",
+          "items": [
+            "Manual stock review before dispatch.",
+            "Cancellation possible during the preparation phase.",
+            "Email updates if availability changes."
+          ]
+        },
+        {
+          "title": "Pricing & promotions",
+          "body": "Prices include applicable taxes and promotions have limited validity.",
+          "items": [
+            "Discounts subject to available units.",
+            "Coupons and codes are non-stackable.",
+            "Rates may be updated without prior notice."
+          ]
+        },
+        {
+          "title": "Liability",
+          "body": "We commit to delivering authentic products and communicating logistics issues.",
+          "items": [
+            "Coverage for transit damage depends on the carrier.",
+            "Replacement or refund in justified cases.",
+            "Limited liability for external delays."
+          ]
+        },
+        {
+          "title": "Privacy",
+          "body": "Data is used only to manage orders and support, in line with current regulations.",
+          "items": [
+            "We do not share data with third parties except logistics.",
+            "Right of access, correction, and deletion.",
+            "Official channels for privacy inquiries."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Legal contact",
+        "body": "For legal or privacy questions, email us and we will take care of your request.",
+        "email": "envio@berserkards.com"
+      }
+    }
   }
 }
