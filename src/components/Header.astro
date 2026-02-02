@@ -13,9 +13,9 @@ const { messages, basePath, switchLang, switchPath } = Astro.props as {
 const navLinks = messages.nav.links;
 ---
 
-<header class="sticky top-0 z-50 border-b border-border bg-base/90 backdrop-blur">
+<header class="sticky top-0 z-50 bg-base/90 backdrop-blur">
   <div class="mx-auto max-w-6xl px-4">
-    <div class="flex items-center justify-between py-0">
+    <div class="flex items-center justify-between py-3">
       <a href={basePath || "/"} class="flex items-center gap-1">
         <img
           src={logo.src}
@@ -29,17 +29,6 @@ const navLinks = messages.nav.links;
           <div class="text-sm text-muted sm:text-base">One Piece JP</div>
         </div>
       </a>
-
-      <nav class="flex flex-wrap items-center gap-6 overflow-x-auto text-xs uppercase tracking-[0.2em] text-muted sm:text-sm">
-        {navLinks.map((link) => (
-          <a
-            href={`${basePath}${link.href}`}
-            class={`whitespace-nowrap pb-2 transition ${link.key === messages.nav.activeKey ? "border-b-2 border-accent text-text" : "border-b-2 border-transparent hover:text-text"}`}
-          >
-            {link.label}
-          </a>
-        ))}
-      </nav>
 
       <div class="flex items-center gap-4">
         <button
@@ -81,6 +70,18 @@ const navLinks = messages.nav.links;
           {messages.nav.languageLabel}
         </a>
       </div>
+    </div>
+    <div class="border-b border-border pb-2">
+      <nav class="mx-auto flex flex-wrap items-center justify-center gap-6 overflow-x-auto text-xs uppercase tracking-[0.2em] text-muted sm:text-sm">
+        {navLinks.map((link) => (
+          <a
+            href={`${basePath}${link.href}`}
+            class={`whitespace-nowrap pb-2 transition ${link.key === messages.nav.activeKey ? "border-b-2 border-accent text-text" : "border-b-2 border-transparent hover:text-text"}`}
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
     </div>
   </div>
 </header>
