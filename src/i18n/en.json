@@ -4,10 +4,7 @@
   },
   "nav": {
     "links": [
-      { "key": "home", "label": "Home", "href": "#inicio" },
       { "key": "one-piece", "label": "One Piece JP", "href": "#one-piece" },
-      { "key": "news", "label": "New", "href": "#novedades" },
-      { "key": "best", "label": "Best Sellers", "href": "#mas-vendidos" },
       { "key": "accessories", "label": "Accessories", "href": "#accesorios" }
     ],
     "activeKey": "one-piece",
