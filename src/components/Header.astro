@@ -15,20 +15,31 @@ const navLinks = messages.nav.links;
 
 <header class="sticky top-0 z-50 border-b border-border bg-base/90 backdrop-blur">
   <div class="mx-auto max-w-6xl px-4">
-    <div class="flex items-center justify-between py-4">
-      <a href={basePath || "/"} class="flex items-center gap-3">
+    <div class="flex flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+      <a href={basePath || "/"} class="flex items-center gap-4">
         <img
           src={logo.src}
           alt="Berserkards logo"
-          class="h-9 w-9 object-contain"
+          class="h-12 w-12 object-contain sm:h-14 sm:w-14"
           loading="eager"
           decoding="async"
         />
         <div class="leading-tight">
-          <div class="text-sm font-semibold tracking-[0.35em]">BERSERKARDS</div>
-          <div class="text-xs text-muted">One Piece JP</div>
+          <div class="text-base font-semibold tracking-[0.35em] sm:text-lg">BERSERKARDS</div>
+          <div class="text-sm text-muted sm:text-base">One Piece JP</div>
         </div>
       </a>
+
+      <nav class="flex flex-wrap items-center gap-6 overflow-x-auto text-xs uppercase tracking-[0.2em] text-muted sm:text-sm">
+        {navLinks.map((link) => (
+          <a
+            href={`${basePath}${link.href}`}
+            class={`whitespace-nowrap pb-2 transition ${link.key === messages.nav.activeKey ? "border-b-2 border-accent text-text" : "border-b-2 border-transparent hover:text-text"}`}
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
 
       <div class="flex items-center gap-4">
         <button
@@ -71,16 +82,5 @@ const navLinks = messages.nav.links;
         </a>
       </div>
     </div>
-
-    <nav class="flex items-center gap-6 overflow-x-auto border-t border-border/60 py-3 text-xs uppercase tracking-[0.2em] text-muted sm:text-sm">
-      {navLinks.map((link) => (
-        <a
-          href={`${basePath}${link.href}`}
-          class={`whitespace-nowrap pb-2 transition ${link.key === messages.nav.activeKey ? "border-b-2 border-accent text-text" : "border-b-2 border-transparent hover:text-text"}`}
-        >
-          {link.label}
-        </a>
-      ))}
-    </nav>
   </div>
 </header>
