@@ -1,10 +1,16 @@
 ---
+import heroImage from "../assets/hero2.png";
+
 const { messages } = Astro.props;
 ---
 
 <section id="inicio" class="mx-auto max-w-6xl px-4 pt-10">
-  <!-- TODO: Coloca la imagen del hero en /public/images/hero.jpg y úsala como background en este contenedor. -->
-  <div class="relative overflow-hidden rounded-card border border-border bg-surface" role="img" aria-label={messages.hero.imageLabel}>
+  <div
+    class="relative overflow-hidden rounded-card border border-border bg-surface bg-cover bg-center"
+    style={`background-image: url(${heroImage.src});`}
+    role="img"
+    aria-label={messages.hero.imageLabel}
+  >
     <div
       class="absolute inset-0 bg-[radial-gradient(900px_420px_at_50%_0%,rgba(224,69,90,0.2),transparent_70%)]"
       aria-hidden="true"
