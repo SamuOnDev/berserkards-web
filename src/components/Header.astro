@@ -1,7 +1,15 @@
 ---
 import logo from "../assets/logo.png";
+import { type Locale, translations } from "../i18n";
 
-const { messages, basePath, switchLang, switchPath } = Astro.props;
+type Messages = (typeof translations)[Locale];
+
+const { messages, basePath, switchLang, switchPath } = Astro.props as {
+  messages: Messages;
+  basePath: string;
+  switchLang: Locale;
+  switchPath: string;
+};
 const navLinks = messages.nav.links;
 ---
 
