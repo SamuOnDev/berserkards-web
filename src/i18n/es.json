@@ -1,13 +1,28 @@
 {
   "meta": {
-    "title": "Berserkards | One Piece JP"
+    "title": "GomuGomuCenter | One Piece JP"
   },
   "nav": {
     "links": [
       {
+        "key": "inicio",
+        "label": "Inicio",
+        "href": "#inicio"
+      },
+      {
         "key": "one-piece",
         "label": "One Piece JP",
         "href": "#one-piece"
+      },
+      {
+        "key": "news",
+        "label": "Novedades",
+        "href": "#novedades"
+      },
+      {
+        "key": "best",
+        "label": "Más Vendidos",
+        "href": "#mas-vendidos"
       },
       {
         "key": "accessories",
@@ -15,18 +30,18 @@
         "href": "#accesorios"
       }
     ],
-    "activeKey": "one-piece",
+    "activeKey": "inicio",
     "searchLabel": "Buscar",
     "accountLabel": "Cuenta",
     "cartLabel": "Carrito",
     "languageLabel": "EN"
   },
   "hero": {
-    "badge": "Tu caja japonesa, bien protegida y sin dramas.",
-    "title": "Tu caja japonesa, bien protegida y sin dramas.",
-    "subtitle": "Abrir una box mola más cuando sabes que viene perfecta.",
+    "badge": "GomuGomuCenter",
+    "title": "Descubre las mejores cartas TCG japonesas",
+    "subtitle": "Protegidas y listas para tus duelos.",
     "ctaPrimary": "Ver cajas",
-    "imageLabel": "Imagen destacada de cajas japonesas"
+    "imageLabel": "Banner ilustrado de GomuGomuCenter"
   },
   "section": {
     "onePieceTitle": "One Piece JP - Booster Box",
@@ -40,7 +55,7 @@
         "title": "Booster Box OP-05",
         "imageKey": "op05",
         "status": "EN STOCK",
-        "badge": "NOVEDAD",
+        "badge": "DESTACADO",
         "tag": "JP"
       },
       {
@@ -58,10 +73,10 @@
         "tag": "JP"
       },
       {
-        "title": "Booster Box OP-03 (JP)",
+        "title": "Booster Box OP-03",
         "imageKey": "op03",
-        "status": "EN STOCK",
-        "badge": "TOP",
+        "status": "AGOTADO",
+        "badge": "AGOTADO",
         "tag": "JP"
       }
     ],
@@ -90,7 +105,7 @@
     "customerService": {
       "title": "Atención al Cliente",
       "cta": "Pregúntame",
-      "email": "envio@berserkards.com"
+      "email": "envio@gomugomucenter.com"
     },
     "info": {
       "title": "Información",
@@ -110,8 +125,8 @@
       ]
     },
     "socialTitle": "Síguenos",
-    "copyright": "© {year} Berserkards. Todos los derechos reservados.",
-    "designCredit": "Diseño por Berserkards Studio."
+    "copyright": "© {year} GomuGomuCenter. Todos los derechos reservados.",
+    "designCredit": "Diseño por GomuGomuCenter Studio."
   },
   "pages": {
     "shippingReturns": {

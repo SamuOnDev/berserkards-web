@@ -1,9 +1,9 @@
 {
   "basePath": "/images/products",
   "items": {
-    "op05": "OP-05.png",
-    "op06": "OP-06.png",
-    "op04": "OP-10.jpg",
-    "op03": "PRB-01.png"
+    "op05": "op-05.svg",
+    "op06": "op-06.svg",
+    "op04": "op-04.svg",
+    "op03": "op-03.svg"
   }
 }
