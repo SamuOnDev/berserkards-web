@@ -5,12 +5,25 @@ html, body {
     font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     background-color: var(--bg);
     background-image:
-        url("../assets/BG.png"),
-        radial-gradient(1200px 600px at 50% -10%, rgba(224, 69, 90, 0.15), transparent 70%);
-    background-position: center;
+        url("../assets/det_index_upper_left.png"),
+        url("../assets/det_index_upper_right.png"),
+        url("../assets/det_index_lower_left.png"),
+        url("../assets/det_index_lower_right.png"),
+        url("../assets/BG.png");
+    background-position:
+        top left,
+        top right,
+        bottom left,
+        bottom right,
+        center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size:
+        320px,
+        320px,
+        320px,
+        320px,
+        cover;
+    background-attachment: scroll;
     color: var(--text);
 }
 
@@ -18,7 +31,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: radial-gradient(900px 400px at 50% 0%, rgba(0, 0, 0, 0.2), transparent 60%);
+    background: radial-gradient(900px 420px at 50% 0%, rgba(255, 173, 160, 0.35), transparent 70%);
     pointer-events: none;
-    opacity: 0.8;
+    opacity: 0.6;
 }

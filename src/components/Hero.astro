@@ -1,5 +1,5 @@
 ---
-import heroImage from "../assets/hero-full.png";
+import heroImage from "../assets/BG_Banner_Sky.png";
 
 const { messages } = Astro.props;
 ---
@@ -12,15 +12,15 @@ const { messages } = Astro.props;
     aria-label={messages.hero.imageLabel}
   >
     <div
-      class="absolute inset-0 bg-[radial-gradient(900px_420px_at_50%_0%,rgba(224,69,90,0.2),transparent_70%)]"
+      class="absolute inset-0 bg-[radial-gradient(900px_420px_at_50%_0%,rgba(255,205,178,0.45),transparent_70%)]"
       aria-hidden="true"
     ></div>
     <div
-      class="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,13,16,0.75)_0%,rgba(11,13,16,0.2)_55%,rgba(11,13,16,0.9)_100%)]"
+      class="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.85)_0%,rgba(255,255,255,0.55)_55%,rgba(255,255,255,0.9)_100%)]"
       aria-hidden="true"
     ></div>
     <div class="relative px-6 py-16 text-center sm:px-12 sm:py-20">
-      <div class="mx-auto inline-flex max-w-md items-center justify-center rounded-full border border-border/60 bg-base/60 px-4 py-2 text-xs uppercase tracking-[0.2em] text-muted">
+      <div class="mx-auto inline-flex max-w-md items-center justify-center rounded-full border border-border/60 bg-surface/70 px-4 py-2 text-xs uppercase tracking-[0.2em] text-muted">
         {messages.hero.badge}
       </div>
 

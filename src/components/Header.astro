@@ -1,5 +1,5 @@
 ---
-import logo from "../assets/logo.png";
+import logo from "../assets/GGC_Logo.png";
 import { type Locale, translations } from "../i18n";
 
 type Messages = (typeof translations)[Locale];
@@ -13,21 +13,17 @@ const { messages, basePath, switchLang, switchPath } = Astro.props as {
 const navLinks = messages.nav.links;
 ---
 
-<header class="sticky top-0 z-50 bg-base/90 backdrop-blur">
+<header class="sticky top-0 z-50 bg-base/80 backdrop-blur">
   <div class="mx-auto max-w-6xl px-4">
     <div class="flex items-center justify-between py-0.3">
-      <a href={basePath || "/"} class="flex items-center gap-1">
+      <a href={basePath || "/"} class="flex items-center gap-2">
         <img
           src={logo.src}
-          alt="Berserkards logo"
-          class="h-25 w-25 object-contain"
+          alt="GomuGomuCenter logo"
+          class="h-12 w-auto object-contain sm:h-14"
           loading="eager"
           decoding="async"
         />
-        <div class="leading-tight">
-          <div class="text-base font-semibold tracking-[0.35em] sm:text-lg">BERSERKARDS</div>
-          <div class="text-sm text-muted sm:text-base">One Piece JP</div>
-        </div>
       </a>
 
       <div class="flex items-center gap-4">
