@@ -3,8 +3,6 @@
 
 :root {
     --page-max-width: 1280px;
-    --page-gutter: clamp(16px, 4vw, 64px);
-    --det-index-offset-y: clamp(520px, 58vh, 640px);
 }
 
 html, body {
@@ -13,19 +11,13 @@ html, body {
     background-image:
         url("../assets/det_index_upper_left.png"),
         url("../assets/det_index_upper_right.png"),
-        url("../assets/det_index_lower_left.png"),
-        url("../assets/det_index_lower_right.png"),
         url("../assets/BG copy.png");
     background-position:
         top left,
         top right,
-        left var(--page-gutter) top var(--det-index-offset-y),
-        right var(--page-gutter) top var(--det-index-offset-y),
         center;
     background-repeat: no-repeat;
     background-size:
-        320px,
-        320px,
         320px,
         320px,
         cover;
