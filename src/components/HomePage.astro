@@ -6,6 +6,8 @@ import Hero from "./Hero.astro";
 import ProductCard from "./ProductCard.astro";
 import Footer from "./Footer.astro";
 import ValueProps from "./ValueProps.astro";
+import detailLeft from "../assets/det_index_lower_left.png";
+import detailRight from "../assets/det_index_lower_right.png";
 import { defaultLocale, translations, type Locale } from "../i18n";
 
 const { lang, pathname } = Astro.props as { lang: Locale; pathname: string };
@@ -31,9 +33,15 @@ const navLabels = Object.fromEntries(messages.nav.links.map((link) => [link.key,
     <span id="mas-vendidos" class="sr-only">{navLabels.best}</span>
     <span id="accesorios" class="sr-only">{navLabels.accessories}</span>
 
-    <div class="mx-auto mt-12 h-px max-w-6xl bg-border/60"></div>
+    <section class="mx-auto mt-8 max-w-6xl px-4" aria-hidden="true">
+      <div class="relative flex items-center justify-center">
+        <img src={detailLeft.src} alt="" class="h-auto w-[clamp(130px,18vw,240px)] object-contain" loading="lazy" />
+        <div class="mx-4 h-px flex-1 bg-[rgba(121,64,42,0.55)]"></div>
+        <img src={detailRight.src} alt="" class="h-auto w-[clamp(130px,18vw,240px)] object-contain" loading="lazy" />
+      </div>
+    </section>
 
-    <section id="one-piece" class="mx-auto mt-12 max-w-6xl px-4">
+    <section id="one-piece" class="mx-auto mt-6 max-w-6xl px-4">
       <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p class="text-xs uppercase tracking-[0.3em] text-muted">{messages.section.onePieceSubtitle}</p>
