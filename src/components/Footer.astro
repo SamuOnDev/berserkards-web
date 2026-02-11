@@ -1,5 +1,7 @@
 ---
 import { type Locale, translations } from "../i18n";
+import detailLeft from "../assets/det_index_lower_left.png";
+import detailRight from "../assets/det_index_lower_right.png";
 
 type Messages = (typeof translations)[Locale];
 
@@ -17,7 +19,24 @@ const socialLinks = [
 ];
 ---
 
-<footer class="mt-16 border-t border-border bg-base/80">
+<footer class="relative mt-16 border-t border-border bg-base/80">
+  <div class="pointer-events-none absolute left-1/2 top-0 z-10 w-full max-w-6xl -translate-x-1/2 px-4" aria-hidden="true">
+    <div class="flex w-full items-center justify-between">
+      <img
+        src={detailLeft.src}
+        alt=""
+        class="h-auto w-[clamp(130px,18vw,240px)] -translate-y-1/2 object-contain"
+        loading="lazy"
+      />
+      <img
+        src={detailRight.src}
+        alt=""
+        class="h-auto w-[clamp(130px,18vw,240px)] -translate-y-1/2 object-contain"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
   <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 text-sm sm:grid-cols-3">
     <div>
       <div class="text-xs uppercase tracking-[0.3em] text-muted">{messages.footer.customerService.title}</div>
